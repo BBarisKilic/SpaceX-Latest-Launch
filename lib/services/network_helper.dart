@@ -16,6 +16,13 @@ class NetworkHelper {
       _listOfData.add(jsonDecode(data)['name']);
       _listOfData.add(jsonDecode(data)['links']['patch']['small']);
       _listOfData.add(jsonDecode(data)['details']);
+      _listOfData.add(jsonDecode(data)['flight_number'].toString());
+      String date =
+          DateTime.tryParse(jsonDecode(data)['date_utc']).toLocal().toString();
+      _listOfData.add(date);
+      _listOfData.add(jsonDecode(data)['links']['article']);
+      _listOfData.add(jsonDecode(data)['links']['wikipedia']);
+      _listOfData.add(jsonDecode(data)['links']['webcast']);
     } else {
       print(response.statusCode);
     }

@@ -1,8 +1,7 @@
 name: spacex_latest_launch
 description: A new Flutter application.
 
-
-publish_to:
+publish_to: 'none'
 
 version: 1.0.0+1
 
@@ -16,6 +15,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   http: ^0.13.1
   flutter_spinkit: ^5.0.0
+  url_launcher: ^6.0.3
 
 dev_dependencies:
   flutter_test:
